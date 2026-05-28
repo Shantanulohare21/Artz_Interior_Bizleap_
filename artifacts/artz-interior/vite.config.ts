@@ -44,12 +44,7 @@ export default defineConfig(async () => {
     resolve: {
       alias: {
         "@": path.resolve(import.meta.dirname, "src"),
-        "@assets": path.resolve(
-          import.meta.dirname,
-          "..",
-          "..",
-          "attached_assets"
-        ),
+        "@assets": path.resolve(import.meta.dirname, "public", "assets"),
       },
       dedupe: ["react", "react-dom"],
     },
