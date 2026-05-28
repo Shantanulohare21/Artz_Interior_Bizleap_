@@ -1,6 +1,6 @@
 kind = "web"
 previewPath = "/"
-title = "Artz Interior"
+title = "Artz Interior — Nagpur Interior Design Studio"
 version = "1.0.0"
 id = "artifacts/artz-interior"
 router = "path"
