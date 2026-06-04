@@ -36,7 +36,7 @@ function BlogModal({ post, onClose }: { post: BlogPost; onClose: () => void }) {
           className="relative w-full max-w-3xl bg-warm-white shadow-luxury"
         >
           {/* Hero image */}
-          <div className="aspect-[16/7] overflow-hidden">
+          <div className="relative aspect-[16/7] overflow-hidden">
             <img
               src={post.image}
               alt={post.title}
@@ -160,18 +160,16 @@ export default function BlogPage() {
           </div>
 
           {/* Grid */}
-          <motion.div layout className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
-            <AnimatePresence mode="popLayout">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+            <AnimatePresence mode="sync" initial={false}>
               {filtered.map((post, i) => (
                 <motion.div
-                  layout
                   key={post.slug}
                   initial={{ opacity: 0, y: 24 }}
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, scale: 0.95 }}
                   transition={{ duration: 0.5, delay: Math.min(i, 6) * 0.06, ease: [0.22, 1, 0.36, 1] }}
                 >
-                  <Reveal delay={i * 0.04}>
                     <article
                       className="group bg-warm-white h-full flex flex-col cursor-pointer"
                       onClick={() => setActivePost(post)}
@@ -209,11 +207,10 @@ export default function BlogPage() {
                         </span>
                       </div>
                     </article>
-                  </Reveal>
                 </motion.div>
               ))}
             </AnimatePresence>
-          </motion.div>
+          </div>
         </div>
       </section>
 

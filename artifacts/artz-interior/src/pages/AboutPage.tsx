@@ -21,7 +21,8 @@ export default function AboutPage() {
                 src={d.intro.image}
                 alt="Art Interiorz studio"
                 className="h-full w-full object-cover"
-                initial={{ scale: 1.15 }}
+                initial={false}
+                animate={{ scale: 1 }}
                 whileInView={{ scale: 1 }}
                 viewport={{ once: true }}
                 transition={{ duration: 1.6, ease: [0.22, 1, 0.36, 1] }}

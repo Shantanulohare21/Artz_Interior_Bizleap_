@@ -44,11 +44,10 @@ export function Portfolio() {
           </Reveal>
         </div>
 
-        <motion.div layout className="grid grid-cols-1 md:grid-cols-3 auto-rows-[260px] md:auto-rows-[300px] gap-5">
-          <AnimatePresence mode="popLayout">
+        <div className="grid grid-cols-1 md:grid-cols-3 auto-rows-[260px] md:auto-rows-[300px] gap-5">
+          <AnimatePresence mode="sync" initial={false}>
             {filtered.map((p, i) => (
               <motion.button
-                layout
                 key={p.title}
                 onClick={() => setPreview(p)}
                 initial={{ opacity: 0, y: 30 }}
@@ -76,7 +75,7 @@ export function Portfolio() {
               </motion.button>
             ))}
           </AnimatePresence>
-        </motion.div>
+        </div>
       </div>
 
       <AnimatePresence>

@@ -16,7 +16,7 @@ export default function ContactPage() {
         crumb="Contact"
         image="/assets/about.jpg"
       />
-      <Contact />
+      <Contact fullWidthMap />
 
       <section className="py-28 lg:py-40 bg-warm-white">
         <div className="mx-auto max-w-4xl px-6 lg:px-10">

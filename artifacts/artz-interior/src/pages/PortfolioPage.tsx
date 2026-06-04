@@ -55,11 +55,10 @@ export default function PortfolioPage() {
             </Reveal>
           </div>
 
-          <motion.div layout className="columns-1 sm:columns-2 lg:columns-3 gap-5">
-            <AnimatePresence mode="popLayout">
+          <div className="columns-1 sm:columns-2 lg:columns-3 gap-5">
+            <AnimatePresence mode="sync" initial={false}>
               {filtered.map((item, i) => (
                 <motion.button
-                  layout
                   key={item.id}
                   onClick={() => setPreview(item)}
                   initial={{ opacity: 0, y: 20 }}
@@ -84,7 +83,7 @@ export default function PortfolioPage() {
                 </motion.button>
               ))}
             </AnimatePresence>
-          </motion.div>
+          </div>
         </div>
       </section>
 
