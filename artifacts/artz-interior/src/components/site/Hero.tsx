@@ -115,7 +115,7 @@ export function Hero() {
             {[1, 2, 3, 4, 5].map((n) => (
               <Star key={n} size={11} className="text-gold fill-gold" />
             ))}
-            <span className="ml-1 text-warm-white/80 text-[11px]">750+ happy clients</span>
+            <span className="ml-1 text-warm-white/80 text-[11px]">600+ happy clients</span>
           </div>
         </motion.div>
 
@@ -172,8 +172,8 @@ export function Hero() {
         >
           {[
             { value: "9+", label: "Years of craft" },
-            { value: "500+", label: "Projects" },
-            { value: "750+", label: "Happy clients" },
+            { value: "650+", label: "Projects" },
+            { value: "600+", label: "Happy clients" },
           ].map((s) => (
             <div key={s.label} className="flex items-baseline gap-3">
               <span className="font-display text-4xl text-warm-white leading-none">{s.value}</span>

@@ -148,11 +148,11 @@ export default function AboutPage() {
                   <div className="text-[10px] tracking-luxury uppercase text-muted-foreground mt-1">Years of practice</div>
                 </div>
                 <div className="border-l-2 border-gold pl-5">
-                  <div className="font-display text-3xl text-charcoal">750+</div>
+                  <div className="font-display text-3xl text-charcoal">600+</div>
                   <div className="text-[10px] tracking-luxury uppercase text-muted-foreground mt-1">Happy clients</div>
                 </div>
                 <div className="border-l-2 border-gold pl-5">
-                  <div className="font-display text-3xl text-charcoal">500+</div>
+                  <div className="font-display text-3xl text-charcoal">650+</div>
                   <div className="text-[10px] tracking-luxury uppercase text-muted-foreground mt-1">Projects done</div>
                 </div>
               </div>

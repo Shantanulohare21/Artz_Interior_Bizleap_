@@ -11,23 +11,23 @@ export const heroData = {
       alt: "Luxury living room interior by Art Interiorz, Nagpur",
     },
     {
-      src: "/assets/portfolio-1.jpg",
+      src: "/assets/hero1.jpeg",
       alt: "Contemporary living room design",
     },
     {
-      src: "/assets/portfolio-3.jpg",
+      src: "/assets/hero2.jpeg",
       alt: "Modular kitchen interior",
     },
     {
-      src: "/assets/portfolio-2.jpg",
+      src: "/assets/hero3.JPG",
       alt: "Master bedroom interior design",
     },
     {
-      src: "/assets/portfolio-4.jpg",
+      src: "/assets/hero4.jpg",
       alt: "Elegant dining and living space",
     },
     {
-      src: "/assets/about.jpg",
+      src: "/assets/hero5.jpg",
       alt: "Art Interiorz studio interior showcase",
     },
   ] as HeroSlide[],
