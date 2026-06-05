@@ -26,7 +26,7 @@ export function PageHero({
         <motion.div
           initial={false}
           animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
+          transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
           className="flex items-center gap-3 mb-7"
         >
           <span className="h-px w-10 bg-gold" />
@@ -46,7 +46,7 @@ export function PageHero({
         <motion.h1
           initial={false}
           animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 1.1, delay: 0.15, ease: [0.22, 1, 0.36, 1] }}
+          transition={{ duration: 0.5, delay: 0.15, ease: [0.22, 1, 0.36, 1] }}
           className="font-display text-warm-white text-5xl sm:text-6xl lg:text-8xl leading-[1] drop-shadow-lg"
         >
           {title}

@@ -7,7 +7,7 @@ import { ArrowRight } from "lucide-react";
 const serviceImages = [
   "/assets/livingroom.jpg",
   "/assets/kitchen.jpg",
-  "/assets/modularkitchen.webp",
+  "/assets/portfolio/Services/shape space/rennovation.jpg",
   "/assets/bedroom.jpg",
   "/assets/dinning.jpg",
   "/assets/hero.jpg",

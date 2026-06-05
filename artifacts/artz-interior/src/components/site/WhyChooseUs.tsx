@@ -12,31 +12,31 @@ import { Link } from "wouter";
 
 const reasons = [
   {
-    label: "Interior Excellence",
+    // label: "Interior Excellence",
     image: "/assets/Interior-Excellence-1-267x300.jpg",
     icon: Star,
     is3D: false,
   },
   {
-    label: "Guaranteed Satisfaction",
+     label: "",
     image: "/assets/guarranteed%20Satisfaction.webp",
     icon: BadgeCheck,
     is3D: false,
   },
   {
-    label: "Modular Storage",
-    image: "/assets/modularkitchen.webp",
+   label: "",
+    image: "/assets/modularkitchen2.webp",
     icon: Layers,
     is3D: false,
   },
   {
-    label: "3D Insights",
+   label: "",
     image: "/assets/3D-Insights-.webp",
     icon: Box,
     is3D: true,
   },
   {
-    label: "Smart Pricing",
+    label: "",
     image: "/assets/Smart%20pricing%20img.webp",
     icon: IndianRupee,
     is3D: false,

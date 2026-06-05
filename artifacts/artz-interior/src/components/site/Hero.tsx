@@ -92,7 +92,7 @@ export function Hero() {
       <motion.div
         initial={false}
         animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 1.8, delay: 0.6 }}
+        transition={{ duration: 1, delay: 0 }}
         className="absolute inset-4 md:inset-8 lg:inset-12 border border-warm-white/20 pointer-events-none z-10"
       />
 
@@ -104,7 +104,7 @@ export function Hero() {
         <motion.div
           initial={false}
           animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.9, delay: 0.3 }}
+          transition={{ duration: 0.9, delay: 0 }}
           className="flex flex-wrap items-center gap-6 mb-10"
         >
           <div className="flex items-center gap-2 text-warm-white/90">
@@ -122,7 +122,7 @@ export function Hero() {
         <motion.h1
           initial={false}
           animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 1.2, delay: 0.5, ease: [0.22, 1, 0.36, 1] }}
+          transition={{ duration: 1, delay: 0, ease: [0.22, 1, 0.36, 1] }}
           className="font-display text-warm-white text-5xl sm:text-6xl md:text-7xl lg:text-[6.5rem] xl:text-[7.5rem] leading-[1.06] max-w-5xl"
         >
           {heroData.title.line1}
@@ -136,7 +136,7 @@ export function Hero() {
         <motion.p
           initial={false}
           animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 1, delay: 0.85 }}
+          transition={{ duration: 1, delay: 0 }}
           className="mt-8 max-w-lg text-warm-white/90 font-light text-[17px] leading-relaxed"
         >
           {heroData.subtitle}
@@ -145,7 +145,7 @@ export function Hero() {
         <motion.div
           initial={false}
           animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 1, delay: 1.05 }}
+          transition={{ duration: 1, delay: 0 }}
           className="mt-12 flex flex-wrap items-center gap-5"
         >
           <Link
@@ -167,7 +167,7 @@ export function Hero() {
         <motion.div
           initial={false}
           animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 1, delay: 1.3 }}
+          transition={{ duration: 1, delay: 0 }}
           className="mt-20 pt-10 border-t border-warm-white/15 flex flex-wrap gap-10"
         >
           {[
