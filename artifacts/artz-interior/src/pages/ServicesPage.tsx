@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { SiteShell } from "@/components/site/SiteShell";
 import { PageHero } from "@/components/site/PageHero";
@@ -13,6 +13,9 @@ import { Link } from "wouter";
 
 export default function ServicesPage() {
   const [expandedService, setExpandedService] = useState<number | null>(null);
+  useEffect(() => {
+    document.title = "Our Services | Art Interiorz Nagpur";
+  }, []);
 
   return (
     <SiteShell>

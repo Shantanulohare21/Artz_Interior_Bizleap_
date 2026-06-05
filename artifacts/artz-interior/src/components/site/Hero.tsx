@@ -107,13 +107,6 @@ export function Hero() {
         ))}
       </div>
 
-      {/* Decorative frame */}
-      <motion.div
-        initial={false}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 1, delay: 0 }}
-        className="absolute inset-4 md:inset-8 lg:inset-12 border border-warm-white/20 pointer-events-none z-10"
-      />
 
       {/* Content */}
       <motion.div

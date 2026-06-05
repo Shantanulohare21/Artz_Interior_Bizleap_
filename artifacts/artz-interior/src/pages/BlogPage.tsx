@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { SiteShell } from "@/components/site/SiteShell";
 import { PageHero } from "@/components/site/PageHero";
@@ -125,6 +125,10 @@ export default function BlogPage() {
 
   const filtered =
     filter === ALL ? blogData.posts : blogData.posts.filter((p) => p.category === filter);
+
+  useEffect(() => {
+    document.title = "Design Journal & Blog | Art Interiorz Nagpur";
+  }, []);
 
   return (
     <SiteShell>

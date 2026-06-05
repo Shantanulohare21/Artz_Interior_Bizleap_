@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { X } from "lucide-react";
 import { SiteShell } from "@/components/site/SiteShell";
@@ -16,6 +16,10 @@ export default function PortfolioPage() {
   const [preview, setPreview] = useState<GalleryItem | null>(null);
   const filtered =
     active === "All" ? galleryItems : galleryItems.filter((g) => g.category === active);
+
+  useEffect(() => {
+    document.title = "Our Portfolio | Art Interiorz Nagpur";
+  }, []);
 
   return (
     <SiteShell>

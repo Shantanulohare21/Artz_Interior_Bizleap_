@@ -3,12 +3,16 @@ import { PageHero } from "@/components/site/PageHero";
 import { Contact } from "@/components/site/Contact";
 import { Reveal, SectionLabel } from "@/components/site/Reveal";
 import { faqData } from "@/data/faqData";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Plus, Minus } from "lucide-react";
 import { AnimatePresence, motion } from "framer-motion";
 
 export default function ContactPage() {
   const [open, setOpen] = useState<number | null>(0);
+  useEffect(() => {
+    document.title = "Contact Us | Art Interiorz Nagpur";
+  }, []);
+
   return (
     <SiteShell>
       <PageHero

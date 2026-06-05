@@ -12,7 +12,7 @@ export default function WhatsAppButton() {
       aria-label="Chat on WhatsApp"
       whileHover={{ scale: 1.06 }}
       whileTap={{ scale: 0.94 }}
-      className="fixed bottom-24 right-5 sm:right-6 z-[65] w-12 h-12 flex items-center justify-center shadow-luxury"
+      className="fixed bottom-6 left-5 sm:left-6 z-[65] w-12 h-12 flex items-center justify-center shadow-luxury"
       style={{ background: "#25D366", borderRadius: "2px" }}
     >
       <svg

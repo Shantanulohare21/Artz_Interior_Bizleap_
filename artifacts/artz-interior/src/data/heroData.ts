@@ -15,7 +15,7 @@ export const heroData = {
       alt: "Contemporary living room design",
     },
     {
-      src: "/assets/home/hero-img/ok/hero3.jpeg",
+      src: "/assets/home/hero-img/ok/hero3.jpg",
       alt: "Modular kitchen interior",
     },
     {

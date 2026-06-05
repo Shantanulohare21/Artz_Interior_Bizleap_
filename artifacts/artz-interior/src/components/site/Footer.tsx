@@ -67,9 +67,9 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="pt-8 flex flex-wrap items-center justify-between gap-4 text-xs text-warm-white/40">
-          <div>{footerData.copyright.replace("{year}", String(year))}</div>
-          <div className="tracking-luxury uppercase">Crafted with care</div>
+        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-warm-white/40">
+          <div>Copyright 2017, ART Interiorz, All Rights Reserved.</div>
+          <div className="tracking-luxury uppercase">Designed and Maintained by BIZLEAP</div>
         </div>
       </div>
     </footer>

@@ -16,7 +16,7 @@ export const footerData = {
     "artinteriorz17@gmail.com",
   ],
   hours: "Mon — Sat · 10:00 to 19:00",
-  copyright: "© {year} Art Interiorz. All rights reserved.",
+  copyright: "© {year} Artz Interiorz. All rights reserved.",
   socials: [
     { label: "Instagram", href: "https://www.instagram.com/artinteriorz" },
     { label: "Facebook", href: "https://www.facebook.com/artinteriorz" },

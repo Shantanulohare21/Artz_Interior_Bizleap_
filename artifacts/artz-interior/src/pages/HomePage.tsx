@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { SiteShell } from "@/components/site/SiteShell";
 import { Hero } from "@/components/site/Hero";
 import { About } from "@/components/site/About";
@@ -10,6 +11,10 @@ import { Testimonials } from "@/components/site/Testimonials";
 import { Contact } from "@/components/site/Contact";
 
 export default function HomePage() {
+  useEffect(() => {
+    document.title = "Art Interiorz — Best Interior Designer in Nagpur";
+  }, []);
+
   return (
     <SiteShell>
       <Hero />
@@ -18,9 +23,9 @@ export default function HomePage() {
       <WhyChooseUs />
       <HowItWorks />
       <HappyClients />
-      {/* <Portfolio /> */}
+      <Portfolio />
       <Testimonials />
-      {/* <Contact /> */}
+      <Contact fullWidthMap />
     </SiteShell>
   );
 }

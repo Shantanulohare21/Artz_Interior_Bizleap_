@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { motion } from "framer-motion";
 import { SiteShell } from "@/components/site/SiteShell";
 import { PageHero } from "@/components/site/PageHero";
@@ -8,6 +9,10 @@ import { Check, Quote } from "lucide-react";
 
 export default function AboutPage() {
   const d = aboutPageData;
+  useEffect(() => {
+    document.title = "About Us | Art Interiorz Nagpur";
+  }, []);
+
   return (
     <SiteShell>
       <PageHero title={d.hero.title} crumb={d.hero.crumb} image={d.hero.image} />

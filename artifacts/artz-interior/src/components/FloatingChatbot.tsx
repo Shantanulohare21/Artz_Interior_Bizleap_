@@ -17,16 +17,140 @@ const QUICK_REPLIES = [
   "Project Timeline & Cost",
 ];
 
-const BOT_RESPONSES: Record<string, string> = {
-  "Interior Design Services":
-    "We offer full-service interior design for residential, commercial and hospitality spaces — including space planning, 3D visualisation, modular kitchens, renovation, and turnkey project execution.",
-  "Modular Kitchen":
-    "We design custom modular kitchens in L-shaped, U-shaped, parallel and open layouts with premium finishes. Get in touch for a free consultation!",
-  "Book a Consultation":
-    "You can book a consultation by filling out our contact form on the Contact page, or call us at +91 95450 02017. We respond within two business days.",
-  "Project Timeline & Cost":
-    "Project timelines typically range from 4–10 weeks depending on scope. We offer flexible pricing and detailed upfront quotations with no hidden costs.",
-};
+function getResponseForQuery(input: string): string {
+  const query = input.toLowerCase().trim();
+
+  // Greetings
+  if (
+    query.includes("hi") ||
+    query.includes("hello") ||
+    query.includes("hey") ||
+    query.includes("greetings") ||
+    query.includes("good morning") ||
+    query.includes("good afternoon")
+  ) {
+    return "Hello! How can I assist you with your interior design project today?";
+  }
+
+  // Kitchens
+  if (query.includes("kitchen") || query.includes("modular")) {
+    return "We design custom modular kitchens in U-shaped, L-shaped, parallel, and open layouts with premium, high-durability finishes. Would you like to consult on a kitchen project?";
+  }
+
+  // Services
+  if (
+    query.includes("service") ||
+    query.includes("design") ||
+    query.includes("bedroom") ||
+    query.includes("living") ||
+    query.includes("office") ||
+    query.includes("commercial") ||
+    query.includes("hospitality") ||
+    query.includes("renovate") ||
+    query.includes("renovation")
+  ) {
+    return "We specialize in Residential, Commercial, and Hospitality designs, including living rooms, modular kitchens, master bedroom suites, dining areas, and turnkey office interiors. We balance aesthetics and functionality.";
+  }
+
+  // Booking
+  if (
+    query.includes("book") ||
+    query.includes("consult") ||
+    query.includes("appointment") ||
+    query.includes("schedule") ||
+    query.includes("meeting") ||
+    query.includes("enquire") ||
+    query.includes("start")
+  ) {
+    return "You can book a consultation by: \n1. Filling out the form on our Contact page \n2. Emailing us at artinteriorz17@gmail.com \n3. Calling us directly at +91 95450 02017 \n4. Clicking the WhatsApp button on the bottom right to chat with us!";
+  }
+
+  // Cost/Pricing
+  if (
+    query.includes("cost") ||
+    query.includes("price") ||
+    query.includes("budget") ||
+    query.includes("quote") ||
+    query.includes("pricing") ||
+    query.includes("rate") ||
+    query.includes("charge") ||
+    query.includes("much")
+  ) {
+    return "We offer transparent pricing with no hidden surprises. Since every space is customized, we provide detailed quotations after an initial consultation. Let's discuss your requirements to give you an accurate estimate!";
+  }
+
+  // Timeline
+  if (
+    query.includes("timeline") ||
+    query.includes("time") ||
+    query.includes("duration") ||
+    query.includes("how long") ||
+    query.includes("days") ||
+    query.includes("weeks")
+  ) {
+    return "Our standard project timelines typically range from 4 to 10 weeks depending on the design scope, size of the space, and customizations. We guarantee on-time execution!";
+  }
+
+  // Location/Studio
+  if (
+    query.includes("location") ||
+    query.includes("address") ||
+    query.includes("office") ||
+    query.includes("where") ||
+    query.includes("studio") ||
+    query.includes("nagpur")
+  ) {
+    return "Our design studio is located at:\nPlot No 13, Suprabhat Apartments, Shilpa Nagar, Somalwada, Nagpur, Maharashtra 440015.\nWe are open Monday to Saturday, 10:00 AM to 7:00 PM (by appointment).";
+  }
+
+  // Founders
+  if (
+    query.includes("founder") ||
+    query.includes("owner") ||
+    query.includes("kapil") ||
+    query.includes("kratika") ||
+    query.includes("thakur") ||
+    query.includes("who")
+  ) {
+    return "Art Interiorz was founded in 2017 by Kapil & Kratika Thakur. They lead a dedicated team of designers and craftsmen executing projects with premium quality.";
+  }
+
+  // Portfolio
+  if (
+    query.includes("portfolio") ||
+    query.includes("project") ||
+    query.includes("work") ||
+    query.includes("photo") ||
+    query.includes("gallery") ||
+    query.includes("image")
+  ) {
+    return "We've completed 650+ projects and worked with 600+ happy clients. You can view our selected work by visiting the Portfolio page from the top menu!";
+  }
+
+  // Contact info
+  if (
+    query.includes("phone") ||
+    query.includes("call") ||
+    query.includes("number") ||
+    query.includes("contact") ||
+    query.includes("email") ||
+    query.includes("mail")
+  ) {
+    return "You can call or WhatsApp us at +91 95450 02017, or email us at artinteriorz17@gmail.com. We look forward to hearing from you!";
+  }
+
+  // Thanks
+  if (
+    query.includes("thank") ||
+    query.includes("thanks") ||
+    query.includes("great") ||
+    query.includes("awesome")
+  ) {
+    return "You're very welcome! Feel free to ask any other questions or let us know if you'd like to book a consultation.";
+  }
+
+  return "Thank you for your message! Our team will get back to you shortly. You can also reach us directly at +91 95450 02017 or artinteriorz17@gmail.com, or click the WhatsApp button on the bottom right.";
+}
 
 let nextId = 3;
 
@@ -50,9 +174,7 @@ export default function FloatingChatbot() {
     setMessages((prev) => [...prev, userMsg]);
     setInput("");
 
-    const response =
-      BOT_RESPONSES[text] ??
-      "Thank you for your message! Our team will get back to you shortly. You can also reach us at +91 95450 02017 or artinteriorz17@gmail.com.";
+    const response = getResponseForQuery(text);
 
     setTimeout(() => {
       setMessages((prev) => [
@@ -100,7 +222,7 @@ export default function FloatingChatbot() {
                   className={`flex ${msg.role === "user" ? "justify-end" : "justify-start"}`}
                 >
                   <div
-                    className={`max-w-[82%] px-4 py-3 text-sm leading-relaxed ${
+                    className={`max-w-[82%] px-4 py-3 text-sm leading-relaxed whitespace-pre-line ${
                       msg.role === "bot"
                         ? "bg-ivory text-charcoal border border-border"
                         : "bg-charcoal text-warm-white"
