@@ -18,9 +18,9 @@ export default function HomePage() {
       <WhyChooseUs />
       <HowItWorks />
       <HappyClients />
-      <Portfolio />
+      {/* <Portfolio /> */}
       <Testimonials />
-      <Contact />
+      {/* <Contact /> */}
     </SiteShell>
   );
 }
