@@ -7,29 +7,29 @@ export const heroData = {
   eyebrow: "Art Interiorz — Est. 2017 · Nagpur",
   slides: [
     {
-      src: "/assets/hero.jpg",
+      src: "/assets/home/hero-img/ok/hero.jpg",
       alt: "Luxury living room interior by Art Interiorz, Nagpur",
     },
     {
-      src: "/assets/hero1.jpeg",
+      src: "/assets/home/hero-img/ok/hero2.jpeg",
       alt: "Contemporary living room design",
     },
     {
-      src: "/assets/hero2.jpeg",
+      src: "/assets/home/hero-img/ok/hero3.jpeg",
       alt: "Modular kitchen interior",
     },
     {
-      src: "/assets/hero3.JPG",
+      src: "/assets/home/hero-img/ok/hero4.jpg",
       alt: "Master bedroom interior design",
     },
-    {
-      src: "/assets/hero4.jpg",
-      alt: "Elegant dining and living space",
-    },
-    {
-      src: "/assets/hero5.jpg",
-      alt: "Art Interiorz studio interior showcase",
-    },
+    // {
+    //   src: "/assets/hero4.jpg",
+    //   alt: "Elegant dining and living space",
+    // },
+    // {
+    //   src: "/assets/hero5.jpg",
+    //   alt: "Art Interiorz studio interior showcase",
+    // },
   ] as HeroSlide[],
   title: {
     line1: "Where dream homes begin",

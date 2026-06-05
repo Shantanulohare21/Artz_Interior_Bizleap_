@@ -27,13 +27,13 @@ export const aboutPageData = {
         title: "Complete Home Interior Design",
         subtitle: "Transform your home into a cohesive, elegant and functional space.",
         text: "From living rooms to kitchens and bedrooms, we provide end-to-end interior design solutions tailored to your style, needs and budget — including furniture layout, color schemes, lighting design and décor elements.",
-        image: "/assets/livingroom.jpg",
+        image: "/assets/portfolio/living-room/lr15.webp",
       },
       {
         title: "Turnkey Design & Build Solutions",
         subtitle: "From concept to creation — we handle it all.",
         text: "Our turnkey service includes architectural planning, interior design, execution and project management. Ideal for homeowners, builders and businesses who want a seamless, stress-free experience with a single point of contact.",
-        image: "/assets/about/turkish-design.jpg",
+        image: "/assets/about/turnkey design.png",
       },
       {
         title: "Customized Furniture & Décor Curation",
