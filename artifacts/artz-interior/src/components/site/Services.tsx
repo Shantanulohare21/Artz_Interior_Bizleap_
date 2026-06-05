@@ -5,12 +5,12 @@ import { Link } from "wouter";
 import { ArrowRight } from "lucide-react";
 
 const serviceImages = [
-  "/assets/portfolio-1.jpg",
-  "/assets/portfolio-3.jpg",
-  "/assets/portfolio-5.jpg",
-  "/assets/portfolio-2.jpg",
-  "/assets/portfolio-4.jpg",
-  "/assets/portfolio-6.jpg",
+  "/assets/livingroom.jpg",
+  "/assets/kitchen.jpg",
+  "/assets/modularkitchen.webp",
+  "/assets/bedroom.jpg",
+  "/assets/dinning.jpg",
+  "/assets/hero.jpg",
 ];
 
 export function Services() {

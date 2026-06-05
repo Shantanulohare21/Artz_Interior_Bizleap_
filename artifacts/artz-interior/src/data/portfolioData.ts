@@ -19,7 +19,7 @@ export const portfolioData = {
   categories: ["All", "Residential", "Hospitality", "Kitchen", "Renovation"] as const,
   projects: [
     {
-      img: "/assets/portfolio-1.jpg",
+      img: "/assets/livingroom.jpg",
       title: "Sterling Living Room",
       category: "Residential" as ProjectCategory,
       location: "Manish Nagar, Nagpur",
@@ -27,14 +27,14 @@ export const portfolioData = {
       span: "md:row-span-2",
     },
     {
-      img: "/assets/portfolio-3.jpg",
+      img: "/assets/kitchen.jpg",
       title: "Ivory Modular Kitchen",
       category: "Kitchen" as ProjectCategory,
       location: "Somalwada, Nagpur",
       description: "An L-shaped modular kitchen with premium quartz countertops and brushed brass fittings.",
     },
     {
-      img: "/assets/portfolio-4.jpg",
+      img: "/assets/dinning.jpg",
       title: "Grand Hotel Lobby",
       category: "Hospitality" as ProjectCategory,
       location: "Civil Lines, Nagpur",
@@ -42,21 +42,21 @@ export const portfolioData = {
       span: "md:row-span-2",
     },
     {
-      img: "/assets/portfolio-2.jpg",
+      img: "/assets/bedroom.jpg",
       title: "Master Bedroom Suite",
       category: "Residential" as ProjectCategory,
       location: "Shilpa Nagar, Nagpur",
       description: "A serene master bedroom with panelled walls, mood lighting and custom wardrobe design.",
     },
     {
-      img: "/assets/portfolio-5.jpg",
+      img: "/assets/modularkitchen.webp",
       title: "Modern Home Renovation",
       category: "Renovation" as ProjectCategory,
       location: "Dharampeth, Nagpur",
       description: "A full-home renovation that blends contemporary design with the character of an older Nagpur bungalow.",
     },
     {
-      img: "/assets/portfolio-6.jpg",
+      img: "/assets/hero.jpg",
       title: "The Arora Dining Room",
       category: "Hospitality" as ProjectCategory,
       location: "Wardha Road, Nagpur",

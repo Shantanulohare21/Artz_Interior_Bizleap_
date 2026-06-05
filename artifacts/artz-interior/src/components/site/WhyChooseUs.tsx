@@ -13,31 +13,31 @@ import { Link } from "wouter";
 const reasons = [
   {
     label: "Interior Excellence",
-    image: "/assets/portfolio-1.jpg",
+    image: "/assets/Interior-Excellence-1-267x300.jpg",
     icon: Star,
     is3D: false,
   },
   {
     label: "Guaranteed Satisfaction",
-    image: "/assets/portfolio-3.jpg",
+    image: "/assets/guarranteed%20Satisfaction.webp",
     icon: BadgeCheck,
     is3D: false,
   },
   {
     label: "Modular Storage",
-    image: "/assets/portfolio-5.jpg",
+    image: "/assets/modularkitchen.webp",
     icon: Layers,
     is3D: false,
   },
   {
     label: "3D Insights",
-    image: "/assets/portfolio-2.jpg",
+    image: "/assets/3D-Insights-.webp",
     icon: Box,
     is3D: true,
   },
   {
     label: "Smart Pricing",
-    image: "/assets/portfolio-4.jpg",
+    image: "/assets/Smart%20pricing%20img.webp",
     icon: IndianRupee,
     is3D: false,
   },
@@ -154,13 +154,13 @@ export function WhyChooseUs() {
           <Reveal className="lg:col-span-5">
             <div className="grid grid-cols-3 gap-3 h-[340px]">
               <div className="col-span-1 overflow-hidden rounded-lg">
-                <img src="/assets/portfolio-6.jpg" alt="Interior" className="h-full w-full object-cover" />
+                <img src="/assets/hero.jpg" alt="Interior" className="h-full w-full object-cover" />
               </div>
               <div className="col-span-1 overflow-hidden rounded-lg mt-8">
-                <img src="/assets/portfolio-1.jpg" alt="Living room" className="h-full w-full object-cover" />
+                <img src="/assets/livingroom.jpg" alt="Living room" className="h-full w-full object-cover" />
               </div>
               <div className="col-span-1 overflow-hidden rounded-lg">
-                <img src="/assets/portfolio-2.jpg" alt="Bedroom" className="h-full w-full object-cover" />
+                <img src="/assets/bedroom.jpg" alt="Bedroom" className="h-full w-full object-cover" />
               </div>
             </div>
           </Reveal>

@@ -7,7 +7,7 @@ const videos = [
   {
     id: "-NtoC0LeJzk",
     thumb: "https://img.youtube.com/vi/-NtoC0LeJzk/hqdefault.jpg",
-    fallback: "/assets/portfolio-1.jpg",
+    fallback: "/assets/livingroom.jpg",
     quote: "They dreamed. We teamed. Together, the perfect space was born.",
     name: "Sharma Residence",
     location: "Shilpa Nagar, Nagpur",
@@ -16,7 +16,7 @@ const videos = [
   {
     id: "GIect0o-JvY",
     thumb: "https://img.youtube.com/vi/GIect0o-JvY/hqdefault.jpg",
-    fallback: "/assets/portfolio-2.jpg",
+    fallback: "/assets/bedroom.jpg",
     quote: "They pictured it. We perfected it. Now, it's their forever home.",
     name: "Kulkarni Family",
     location: "Manish Nagar, Nagpur",
@@ -25,7 +25,7 @@ const videos = [
   {
     id: "2UqJOidnjg8",
     thumb: "https://img.youtube.com/vi/2UqJOidnjg8/hqdefault.jpg",
-    fallback: "/assets/portfolio-3.jpg",
+    fallback: "/assets/kitchen.jpg",
     quote: "From Pinterest boards to real home goals. Another happy client by Art Interiorz.",
     name: "Deshmukh Residence",
     location: "Wardha Road, Nagpur",
@@ -34,7 +34,7 @@ const videos = [
   {
     id: "s-VqDnUZhFw",
     thumb: "https://img.youtube.com/vi/s-VqDnUZhFw/hqdefault.jpg",
-    fallback: "/assets/portfolio-4.jpg",
+    fallback: "/assets/dinning.jpg",
     quote: "Every corner, every detail — crafted exactly as we imagined it.",
     name: "Joshi Family",
     location: "Ramdaspeth, Nagpur",
@@ -43,7 +43,7 @@ const videos = [
   {
     id: "zRm2Ca2yLt8",
     thumb: "https://img.youtube.com/vi/zRm2Ca2yLt8/hqdefault.jpg",
-    fallback: "/assets/portfolio-5.jpg",
+    fallback: "/assets/modularkitchen.webp",
     quote: "Art Interiorz turned our house into the home we always dreamed of.",
     name: "Thakur Residence",
     location: "Somalwada, Nagpur",
@@ -52,7 +52,7 @@ const videos = [
   {
     id: "e-zgonynVY0",
     thumb: "https://img.youtube.com/vi/e-zgonynVY0/hqdefault.jpg",
-    fallback: "/assets/portfolio-6.jpg",
+    fallback: "/assets/hero.jpg",
     quote: "We wanted a space that felt like us. Art Interiorz delivered exactly that.",
     name: "Mishra Family",
     location: "Civil Lines, Nagpur",
@@ -61,7 +61,7 @@ const videos = [
   {
     id: "2hV67o8GL6U",
     thumb: "https://img.youtube.com/vi/2hV67o8GL6U/hqdefault.jpg",
-    fallback: "/assets/portfolio-3.jpg",
+    fallback: "/assets/kitchen.jpg",
     quote: "From concept to completion — a seamless, beautiful experience.",
     name: "Pawar Residence",
     location: "Dharampeth, Nagpur",
@@ -70,7 +70,7 @@ const videos = [
   {
     id: "zcmxHODPhS4",
     thumb: "https://img.youtube.com/vi/zcmxHODPhS4/hqdefault.jpg",
-    fallback: "/assets/portfolio-1.jpg",
+    fallback: "/assets/livingroom.jpg",
     quote: "The 3D visualizations matched the final result almost exactly.",
     name: "Gupta Family",
     location: "Sitabuldi, Nagpur",
@@ -79,7 +79,7 @@ const videos = [
   {
     id: "fvvzKTANszk",
     thumb: "https://img.youtube.com/vi/fvvzKTANszk/hqdefault.jpg",
-    fallback: "/assets/portfolio-2.jpg",
+    fallback: "/assets/bedroom.jpg",
     quote: "Best decision we made — a home that exceeds our every expectation.",
     name: "Rane Residence",
     location: "Pratap Nagar, Nagpur",

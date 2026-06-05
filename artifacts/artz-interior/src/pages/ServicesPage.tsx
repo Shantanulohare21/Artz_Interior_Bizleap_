@@ -19,7 +19,7 @@ export default function ServicesPage() {
       <PageHero
         title="Services"
         crumb="Services"
-        image="/assets/portfolio-3.jpg"
+        image="/assets/kitchen.jpg"
       />
 
       {/* Featured service categories — alternating image + text */}

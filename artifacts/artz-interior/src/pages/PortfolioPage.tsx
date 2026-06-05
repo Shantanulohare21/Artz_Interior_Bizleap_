@@ -22,7 +22,7 @@ export default function PortfolioPage() {
       <PageHero
         title="Our Portfolio"
         crumb="Portfolio"
-        image="/assets/portfolio-1.jpg"
+        image="/assets/livingroom.jpg"
       />
 
       <section className="py-20 lg:py-28 bg-warm-white">

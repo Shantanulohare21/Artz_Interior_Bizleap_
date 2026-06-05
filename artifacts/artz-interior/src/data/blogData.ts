@@ -13,7 +13,7 @@ export const blogData = {
   hero: {
     title: "Design Journal",
     crumb: "Blog",
-    image: "/assets/portfolio-2.jpg",
+    image: "/assets/bedroom.jpg",
   },
   intro:
     "Notes, guides and inspiration from the Art Interiorz studio — on materials, modular kitchens, renovation, hospitality and the craft of living beautifully.",
@@ -34,7 +34,7 @@ export const blogData = {
       category: "Residential",
       readTime: "5 min read",
       date: "June 12, 2025",
-      image: "/assets/portfolio-1.jpg",
+      image: "/assets/livingroom.jpg",
     },
     {
       slug: "modular-kitchen-guide",
@@ -53,7 +53,7 @@ export const blogData = {
       category: "Kitchen",
       readTime: "7 min read",
       date: "May 28, 2025",
-      image: "/assets/portfolio-3.jpg",
+      image: "/assets/kitchen.jpg",
     },
     {
       slug: "home-renovation-nagpur",
@@ -72,7 +72,7 @@ export const blogData = {
       category: "Renovation",
       readTime: "6 min read",
       date: "April 18, 2025",
-      image: "/assets/portfolio-4.jpg",
+      image: "/assets/Blog/Home-renovation.jpg",
     },
     {
       slug: "hospitality-design-essentials",
@@ -90,7 +90,7 @@ export const blogData = {
       category: "Hospitality",
       readTime: "8 min read",
       date: "March 22, 2025",
-      image: "/assets/portfolio-2.jpg",
+      image: "/assets/Blog/Hospitality-Interior-Designers.jpg",
     },
     {
       slug: "3d-visualisation",
@@ -108,26 +108,26 @@ export const blogData = {
       category: "Process",
       readTime: "4 min read",
       date: "February 14, 2025",
-      image: "/assets/portfolio-5.jpg",
+      image: "/assets/Blog/3D-visualization.jpg",
     },
-    {
-      slug: "interior-design-cost-nagpur",
-      title: "Interior Design Cost in Nagpur — A Transparent Breakdown",
-      excerpt:
-        "What actually drives the cost of interior design, and how we plan budgets that stay honest from concept to handover.",
-      body: [
-        "One of the most common questions we hear from clients considering interior design is: 'How much will this actually cost?' It is a fair question, and one that deserves a direct, transparent answer — not the vague 'it depends' that so many in our industry default to.",
-        "Interior design costs in Nagpur vary significantly based on four primary factors: the scope of work, the quality of materials selected, the complexity of the design, and the execution timeline. A basic interior fit-out for a 2BHK apartment in Nagpur might range from ₹8–12 lakhs, while a premium full-home design with custom furniture and high-end finishes could reach ₹25–40 lakhs or more. These are broad ranges — your specific project will depend on your choices and priorities.",
-        "The single biggest driver of cost is the material specification. The difference between a budget laminate and a premium European finish can be three to five times the price — and there are legitimate reasons for that difference in durability, aesthetics and tactile quality. A good designer will help you understand where it makes sense to invest more (high-touch surfaces like kitchen shutters and flooring) and where you can save (areas with less visual impact).",
-        "Design and professional fees typically represent 10–15% of the total project budget at Art Interiorz. This covers the full design process: initial consultations, space planning, 3D visualisations, material specification, shop drawings and site supervision. Some studios charge lower design fees but recover margin on material markups — we prefer full transparency, so our material costs are at-market or below, and our design fee is clearly stated upfront.",
-        "Civil work — plastering, tiling, waterproofing and structural modifications — is often underestimated in renovation budgets. In older Nagpur homes, particularly those built before 2000, civil surprises are common. We always recommend budgeting a 10–15% contingency above the estimated civil cost for renovation projects.",
-        "Furniture and décor form the final category. Custom furniture typically costs more than catalogue pieces but fits your space perfectly and is built to your specification. We maintain relationships with skilled craftsmen across Nagpur and can deliver custom pieces at prices that are competitive with premium retail furniture.",
-        "Our advice: be honest with your designer about your budget from day one. A good designer will work creatively within your budget — prioritising where it matters most and finding savings where it matters less. Budget surprises are almost always the result of scope creep or unclear communication at the start. At Art Interiorz, we commit to delivering your project within the agreed budget, and any variations require your written approval before proceeding.",
-      ],
-      category: "Guides",
-      readTime: "9 min read",
-      date: "January 30, 2025",
-      image: "/assets/portfolio-6.jpg",
-    },
+    // {
+    //   slug: "interior-design-cost-nagpur",
+    //   title: "Interior Design Cost in Nagpur — A Transparent Breakdown",
+    //   excerpt:
+    //     "What actually drives the cost of interior design, and how we plan budgets that stay honest from concept to handover.",
+    //   body: [
+    //     "One of the most common questions we hear from clients considering interior design is: 'How much will this actually cost?' It is a fair question, and one that deserves a direct, transparent answer — not the vague 'it depends' that so many in our industry default to.",
+    //     "Interior design costs in Nagpur vary significantly based on four primary factors: the scope of work, the quality of materials selected, the complexity of the design, and the execution timeline. A basic interior fit-out for a 2BHK apartment in Nagpur might range from ₹8–12 lakhs, while a premium full-home design with custom furniture and high-end finishes could reach ₹25–40 lakhs or more. These are broad ranges — your specific project will depend on your choices and priorities.",
+    //     "The single biggest driver of cost is the material specification. The difference between a budget laminate and a premium European finish can be three to five times the price — and there are legitimate reasons for that difference in durability, aesthetics and tactile quality. A good designer will help you understand where it makes sense to invest more (high-touch surfaces like kitchen shutters and flooring) and where you can save (areas with less visual impact).",
+    //     "Design and professional fees typically represent 10–15% of the total project budget at Art Interiorz. This covers the full design process: initial consultations, space planning, 3D visualisations, material specification, shop drawings and site supervision. Some studios charge lower design fees but recover margin on material markups — we prefer full transparency, so our material costs are at-market or below, and our design fee is clearly stated upfront.",
+    //     "Civil work — plastering, tiling, waterproofing and structural modifications — is often underestimated in renovation budgets. In older Nagpur homes, particularly those built before 2000, civil surprises are common. We always recommend budgeting a 10–15% contingency above the estimated civil cost for renovation projects.",
+    //     "Furniture and décor form the final category. Custom furniture typically costs more than catalogue pieces but fits your space perfectly and is built to your specification. We maintain relationships with skilled craftsmen across Nagpur and can deliver custom pieces at prices that are competitive with premium retail furniture.",
+    //     "Our advice: be honest with your designer about your budget from day one. A good designer will work creatively within your budget — prioritising where it matters most and finding savings where it matters less. Budget surprises are almost always the result of scope creep or unclear communication at the start. At Art Interiorz, we commit to delivering your project within the agreed budget, and any variations require your written approval before proceeding.",
+    //   ],
+    //   category: "Guides",
+    //   readTime: "9 min read",
+    //   date: "January 30, 2025",
+    //   image: "/assets/Blog/interior-design-cost.jpg",
+    // },
   ] as BlogPost[],
 };

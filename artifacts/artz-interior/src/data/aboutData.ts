@@ -18,7 +18,6 @@ export const aboutData = {
     { value: "9+", label: "Years of craft" },
     { value: "600+", label: "Happy customers" },
     { value: "650+", label: "Projects complete" },
-    { value: "25+", label: "Team members" },
   ],
   badge: { value: "9", caption: "Years designing\nrefined living" },
 };
