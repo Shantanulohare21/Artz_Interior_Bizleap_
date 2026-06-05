@@ -12,30 +12,35 @@ import { Link } from "wouter";
 
 const reasons = [
   {
-    // label: "Interior Excellence",
+    id: "interior-excellence",
+    label: "",
     image: "/assets/Interior-Excellence-1-267x300.jpg",
     icon: Star,
     is3D: false,
   },
   {
-     label: "",
+    id: "guaranteed-satisfaction",
+    label: "",
     image: "/assets/guarranteed%20Satisfaction.webp",
     icon: BadgeCheck,
     is3D: false,
   },
   {
-   label: "",
+    id: "modular-kitchen",
+    label: "",
     image: "/assets/modularkitchen2.webp",
     icon: Layers,
     is3D: false,
   },
   {
-   label: "",
+    id: "3d-insights",
+    label: "",
     image: "/assets/3D-Insights-.webp",
     icon: Box,
     is3D: true,
   },
   {
+    id: "smart-pricing",
     label: "",
     image: "/assets/Smart%20pricing%20img.webp",
     icon: IndianRupee,
@@ -107,7 +112,7 @@ export function WhyChooseUs() {
         {/* 5 image cards */}
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 mb-20">
           {reasons.map((r, i) => (
-            <Reveal key={r.label} delay={i * 0.07}>
+            <Reveal key={r.id} delay={i * 0.07}>
               <motion.div
                 whileHover={{ y: -5 }}
                 transition={{ duration: 0.35 }}

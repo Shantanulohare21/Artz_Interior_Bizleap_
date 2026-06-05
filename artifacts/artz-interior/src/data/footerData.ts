@@ -18,9 +18,9 @@ export const footerData = {
   hours: "Mon — Sat · 10:00 to 19:00",
   copyright: "© {year} Art Interiorz. All rights reserved.",
   socials: [
-    { label: "Instagram", href: "https://instagram.com" },
-    { label: "Facebook", href: "https://facebook.com" },
+    { label: "Instagram", href: "https://www.instagram.com/artinteriorz" },
+    { label: "Facebook", href: "https://www.facebook.com/artinteriorz" },
     { label: "WhatsApp", href: "https://wa.me/919545002017?text=Hello%2C%20I%20visited%20your%20website%20and%20want%20more%20information." },
-    { label: "LinkedIn", href: "https://linkedin.com" },
+    { label: "LinkedIn", href: "https://www.linkedin.com/company/art-interiorz/" },
   ],
 };

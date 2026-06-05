@@ -4,7 +4,7 @@ import { ArrowDown, ChevronLeft, ChevronRight, Star } from "lucide-react";
 import { heroData } from "@/data/heroData";
 import { Link } from "wouter";
 
-const SLIDE_INTERVAL_MS = 5500;
+const SLIDE_INTERVAL_MS = 5000;
 
 export function Hero() {
   const ref = useRef<HTMLDivElement>(null);
@@ -14,6 +14,8 @@ export function Hero() {
 
   const slides = heroData.slides;
   const [index, setIndex] = useState(0);
+  const [isPaused, setIsPaused] = useState(false);
+  const [loadedImages, setLoadedImages] = useState<Set<string>>(new Set());
 
   const goTo = useCallback(
     (next: number) => {
@@ -22,12 +24,24 @@ export function Hero() {
     [slides.length],
   );
 
+  // Preload all images
   useEffect(() => {
+    slides.forEach((slide) => {
+      const img = new Image();
+      img.src = slide.src;
+      img.onload = () => {
+        setLoadedImages((prev) => new Set(prev).add(slide.src));
+      };
+    });
+  }, [slides]);
+
+  useEffect(() => {
+    if (isPaused) return;
     const timer = window.setInterval(() => {
       setIndex((i) => (i + 1) % slides.length);
     }, SLIDE_INTERVAL_MS);
     return () => window.clearInterval(timer);
-  }, [slides.length]);
+  }, [slides.length, isPaused]);
 
   const active = slides[index];
 
@@ -35,18 +49,19 @@ export function Hero() {
     <section id="home" ref={ref} className="relative min-h-[100dvh] w-full overflow-hidden flex items-center">
       {/* Parallax background slider */}
       <motion.div style={{ y }} className="absolute inset-0">
-        <AnimatePresence mode="sync" initial={false}>
+        <AnimatePresence mode="popLayout" initial={false}>
           <motion.img
             key={active.src}
             src={active.src}
             alt={active.alt}
-            initial={{ opacity: 0, scale: 1.08 }}
-            animate={{ opacity: 1, scale: 1.1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 1.1, ease: [0.22, 1, 0.36, 1] }}
-            className="absolute inset-0 h-full w-full object-cover"
+            initial={{ opacity: 0, scale: 1.05 }}
+            animate={{ opacity: 1, scale: 1 }}
+            exit={{ opacity: 0, scale: 0.95 }}
+            transition={{ duration: 0.8, ease: [0.4, 0, 0.2, 1] }}
+            className="absolute inset-0 h-full w-full object-cover will-change-transform"
             width={1920}
             height={1280}
+            loading="eager"
           />
         </AnimatePresence>
         <div className="absolute inset-0 bg-gradient-to-b from-charcoal/60 via-charcoal/30 to-charcoal/80" />
@@ -54,7 +69,11 @@ export function Hero() {
       </motion.div>
 
       {/* Slide controls */}
-      <div className="absolute inset-y-0 left-0 right-0 z-[15] pointer-events-none flex items-center justify-between px-4 md:px-8">
+      <div 
+        className="absolute inset-y-0 left-0 right-0 z-[15] pointer-events-none flex items-center justify-between px-4 md:px-8"
+        onMouseEnter={() => setIsPaused(true)}
+        onMouseLeave={() => setIsPaused(false)}
+      >
         <button
           type="button"
           onClick={() => goTo(index - 1)}
